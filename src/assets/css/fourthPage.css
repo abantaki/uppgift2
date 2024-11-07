@@ -1,0 +1,51 @@
+#fourthPageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#fourthPage {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#fourthPage .fourthPageContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+#fourthPage h2 {
+  font-size: x-large;
+  color: black;
+}
+
+.fourthPageText h2, .fourthPageText p {
+  padding: 1%;
+}
+
+.fourthPageText .learnMoreButton {
+  background-color: #6366f1;
+  width: 30%;
+  text-align: center;
+  color: white;
+  padding: 9px 20px 9px 20px;
+  border-radius: 4px;
+}
+.learnMoreButton i {
+  color: white;
+}
+
+#fourthPage i {
+  color: #6366f1;
+}
+
+#fourthPage i.fa-arrow-right {
+  color: white;
+}
+
+.pairs {
+  display: flex;
+}

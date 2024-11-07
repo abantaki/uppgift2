@@ -1,0 +1,92 @@
+.infobox {
+  background-color: #f3f0ff;
+  padding: 60px;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newslettercontainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 45%;
+}
+
+.newslettercontainer img {
+  width: 67px;
+  height: 67px;
+}
+
+h4 {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  text-align: left;
+}
+
+.subscription {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.input-button-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+}
+
+.input-button-container i {
+  padding-left: 15px;
+  color: #999;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.input-button-container input[type="email"] {
+  padding: 12px 15px;
+  border: none;
+  flex-grow: 1;
+  outline: none;
+  font-size: 14px; 
+  color: #999;
+}
+
+.input-button-container button {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.input-button-container button:hover {
+  background-color: #4e3fbd;
+}
+
+footer {
+  padding: 3%;
+}

@@ -1,0 +1,43 @@
+#secondPage {
+  width: 70%;
+}
+
+#secondPage header {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#secondPageContent {
+  width: 100%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+#leftSecondPageContent img{
+  height: 80%;
+}
+
+#rightSecondPageContent {
+  width: 60%;
+}
+
+#rightSecondPageContent h2 {
+  font-size: 45pt;
+  color: black;
+}
+
+#rightPageCategories {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+.category div {
+  padding: 5%;
+}

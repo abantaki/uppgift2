@@ -1,0 +1,45 @@
+#fifthPageWrapper {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #f5f7fa 0%, #e8eef5 100%);
+    padding: 5%;
+}
+
+#fifthPage {
+    width: 70%;
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fifthPage h1 {
+    font-size: 30pt;
+}
+
+.fifthPageSection {
+    width: 30%;
+}
+
+.fifthPageSection.review {
+    position: relative;
+    background-color: white;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6.4px -1px #13102208;
+    box-shadow: 0px 4.4px 12px -1px #1310220f;
+}
+
+.fifthPageSection.review > p {
+    padding: 5% 0;
+}
+
+.quote {
+    width: 15%;
+    position: absolute;
+    top: -5%;
+    left: 5%;
+}
+
+.profile {
+    display: flex;
+}

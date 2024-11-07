@@ -1,0 +1,43 @@
+#thirdPageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #f5f7fa 0%, #e8eef5 100%);
+}
+#thirdPageWrapper h2, #thirdPageWrapper h4{
+  color: black;
+}
+#thirdPageWrapper h2 {
+  font-size: 2.5rem;
+  margin: 2%;
+}
+
+#transactionHistory h4, #transactionHistory p {
+  padding: 1%;
+}
+
+#transactionHistory h4 {
+  font-size: x-large;
+}
+
+#thirdPageWrapper #thirdPage {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#thirdPage .bilder {
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-content: start;
+  /* align-items: center; */
+  margin: 2%;
+}
+
+#thirdPage .bilder img{
+  /* height: 80%; */
+}
