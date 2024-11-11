@@ -1,12 +1,11 @@
-// src/components/fifthPage.jsx
 import React from "react";
-import "../assets/css/fifthPage.css"; // Importera CSS för fifth page
+import "./fifthPage.css"; // Importera CSS för fifth page
 
 // Importera alla bilder relativt till projektets filstruktur
-import quotes from "../assets/images/fifthPage/quotes.svg";
-import rating from "../assets/images/fifthPage/rating.svg";
-import imageFannie from "../assets/images/fifthPage/image.svg";
-import imageAlbert from "../assets/images/fifthPage/image (1).svg";
+import quotes from "../../assets/images/fifthPage/quotes.svg";
+import rating from "../../assets/images/fifthPage/rating.svg";
+import imageFannie from "../../assets/images/fifthPage/image.svg";
+import imageAlbert from "../../assets/images/fifthPage/image (1).svg";
 
 const FifthPage = () => {
   return (

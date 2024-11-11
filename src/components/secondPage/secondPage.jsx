@@ -1,20 +1,20 @@
 // src/components/secondPage.jsx
 import React from "react";
-import "../assets/css/secondPage.css"; // Importera CSS för second page
+import "./secondPage.css"; // Importera CSS för second page
 
 // Importera alla bilder relativt till projektets filstruktur
-import logo from "../assets/images/secondPage/logo.svg";
-import logo1 from "../assets/images/secondPage/logo (1).svg";
-import logo2 from "../assets/images/secondPage/logo (2).svg";
-import logo3 from "../assets/images/secondPage/logo (3).svg";
-import logo4 from "../assets/images/secondPage/logo (4).svg";
-import mainImage from "../assets/images/secondPage/image.svg";
-import icon1 from "../assets/images/secondPage/categories/icon.svg";
-import icon2 from "../assets/images/secondPage/categories/icon (1).svg";
-import icon3 from "../assets/images/secondPage/categories/icon (2).svg";
-import icon4 from "../assets/images/secondPage/categories/icon (3).svg";
-import icon5 from "../assets/images/secondPage/categories/icon (4).svg";
-import icon6 from "../assets/images/secondPage/categories/icon (5).svg";
+import logo from "../../assets/images/secondPage/logo.svg";
+import logo1 from "../../assets/images/secondPage/logo (1).svg";
+import logo2 from "../../assets/images/secondPage/logo (2).svg";
+import logo3 from "../../assets/images/secondPage/logo (3).svg";
+import logo4 from "../../assets/images/secondPage/logo (4).svg";
+import mainImage from "../../assets/images/secondPage/image.svg";
+import icon1 from "../../assets/images/secondPage/categories/icon.svg";
+import icon2 from "../../assets/images/secondPage/categories/icon (1).svg";
+import icon3 from "../../assets/images/secondPage/categories/icon (2).svg";
+import icon4 from "../../assets/images/secondPage/categories/icon (3).svg";
+import icon5 from "../../assets/images/secondPage/categories/icon (4).svg";
+import icon6 from "../../assets/images/secondPage/categories/icon (5).svg";
 
 const SecondPage = () => {
   return (

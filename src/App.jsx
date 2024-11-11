@@ -1,12 +1,13 @@
 import React from "react";
-import FirstPage from "./components/firstPage";
-import SecondPage from "./components/secondPage";
-import ThirdPage from "./components/thirdPage";
-import FourthPage from "./components/fourthPage";
-import FifthPage from "./components/fifthPage";
-import SixthPage from "./components/sixthPage";
-import InfoBox from "./components/infoBox";
-import Footer from "./components/footer"; // Importera footern
+import "././assets/css/main.css";
+import FirstPage from "./components/firstpage/firstPage";
+import SecondPage from "./components/secondPage/secondPage";
+import ThirdPage from "./components/thirdPage/thirdPage";
+import FourthPage from "./components/fourthPage/fourthPage";
+import FifthPage from "./components/fifthPage/fifthPage";
+import SixthPage from "./components/sixthPage/sixthPage";
+import InfoBox from "./components/infoBox/InfoBox";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (

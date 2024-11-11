@@ -1,11 +1,11 @@
 // src/components/thirdPage.jsx
 import React from "react";
-import "../assets/css/thirdPage.css"; // Importera CSS för third page
+import "./thirdPage.css"; // Importera CSS för third page
 
 // Importera alla bilder relativt till projektets filstruktur
-import iphone12Pro from "../assets/images/thirdPage/iPhone 12 Pro.svg";
-import iphone12Pro1 from "../assets/images/thirdPage/iPhone 12 Pro (1).svg";
-import iphone12Pro2 from "../assets/images/thirdPage/iPhone 12 Pro (2).svg";
+import iphone12Pro from "../../assets/images/thirdPage/iPhone 12 Pro.svg";
+import iphone12Pro1 from "../../assets/images/thirdPage/iPhone 12 Pro (1).svg";
+import iphone12Pro2 from "../../assets/images/thirdPage/iPhone 12 Pro (2).svg";
 
 const ThirdPage = () => {
   return (

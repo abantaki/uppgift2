@@ -1,12 +1,12 @@
 // src/components/fourthPage.jsx
 import React from "react";
-import "../assets/css/fourthPage.css"; // Importera CSS för fourth page
+import "./fourthPage.css"; // Importera CSS för fourth page
 
 // Importera alla bilder relativt till projektets filstruktur
-import moneyTransfer from "../assets/images/fourthPage/image.svg";
-import internationalPayments from "../assets/images/fourthPage/image (1).svg";
-import icon6 from "../assets/images/fourthPage/icon (6).svg";
-import icon7 from "../assets/images/fourthPage/icon (7).svg";
+import moneyTransfer from "../../assets/images/fourthPage/image.svg";
+import internationalPayments from "../../assets/images/fourthPage/image (1).svg";
+import icon6 from "../../assets/images/fourthPage/icon (6).svg";
+import icon7 from "../../assets/images/fourthPage/icon (7).svg";
 
 const FourthPage = () => {
   return (

@@ -1,12 +1,12 @@
 // src/components/sixthPage.jsx
 import React from "react";
-import "../assets/css/sixthPage.css"; // Importera CSS för sixth page
+import "./sixthPage.css"; // Importera CSS för sixth page
 
 // Importera alla bilder relativt till projektets filstruktur
-import phoneIcon from "../assets/images/sixthPage/icon.svg";
-import phoneIconAlt from "../assets/images/sixthPage/icon (1).svg";
-import downArrow from "../assets/images/sixthPage/downArrow.svg";
-import upArrow from "../assets/images/sixthPage/upArrow.svg";
+import phoneIcon from "../../assets/images/sixthPage/icon.svg";
+import phoneIconAlt from "../../assets/images/sixthPage/icon (1).svg";
+import downArrow from "../../assets/images/sixthPage/downArrow.svg";
+import upArrow from "../../assets/images/sixthPage/upArrow.svg";
 
 const SixthPage = () => {
   return (

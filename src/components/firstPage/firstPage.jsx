@@ -1,8 +1,12 @@
 import React from "react";
-import solidIcon from "../assets/images/firstPage/solid.svg";
-import googlePlayIcon from "../assets/images/firstPage/googleplay.svg";
-import appStoreIcon from "../assets/images/firstPage/appstore.svg";
-import doublePhonesIcon from "../assets/images/firstPage/doublephones.svg";
+import solidIcon from "../../assets/images/firstPage/solid.svg";
+import googlePlayIcon from "../../assets/images/firstPage/googleplay.svg";
+import appStoreIcon from "../../assets/images/firstPage/appstore.svg";
+import doublePhonesIcon from "../../assets/images/firstPage/doublephones.svg";
+
+// Importing CSS files
+import "./firstpage.css";
+import "./switcher.css";
 
 const FirstPage = () => {
   return (
@@ -15,10 +19,11 @@ const FirstPage = () => {
           <p>Dark Mode</p>
           <label className="switch">
             <input type="checkbox" />
-            <span className="slide round"></span>
+            <span className="slider round"></span>{" "}
+            {/* Make sure this class matches the CSS */}
           </label>
-          <p id="signUp">
-            <i className="fa-thin fa-user-large"></i> Sign in / up
+          <p id="signInUp">
+            <i className="fa-solid fa-user"></i> Sign in / up
           </p>
         </section>
       </header>

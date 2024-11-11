@@ -1,9 +1,9 @@
 // src/components/infoBox.jsx
 import React from "react";
-import "../assets/css/infoBox.css"; // Importera CSS för infobox
+import "./infoBox.css"; // Importera CSS för infobox
 
 // Importera bilden relativt till projektets filstruktur
-import notificationIcon from "../assets/images/infoBox/notification.svg";
+import notificationIcon from "../../assets/images/infoBox/notification.svg";
 
 const InfoBox = () => {
   return (
