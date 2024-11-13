@@ -1,0 +1,9 @@
+#footerS {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 14vh;
+  background: var(--secondaryBackground);
+  color: var(--text);
+  padding: 3%;
+}

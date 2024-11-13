@@ -1,172 +1,97 @@
-#firstPageWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #f5f7fa 0%, #e8eef5 100%);
-  overflow: hidden;
-  position: relative;
-}
-
-#firstPage {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 1300px;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .headerSideSection {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.headerSideSection p {
+  text-wrap: nowrap;
 }
 
 .headerLeftSection {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  width: 23%;
+  padding-left: 0;
 }
 
 .headerRightSection {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-#firstPageContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-grow: 1;
-}
-
-#downloadSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Ensure the whole section is centered vertically and horizontally */
-  padding-bottom: 2rem;
-}
-
-#headers {
-  margin-bottom: 2rem; /* Increase margin to add spacing between headers and paragraphs */
-}
-
-.header-text {
-  font-size: 60px;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.538);
-  color: #0b0f19;
-  font-weight: bold;
-  line-height: 1.2;
-  margin: 0;
-}
-
-#paragraphs {
-  text-align: center; /* Ensure the text is centered */
-  font-size: 18px;
-  color: #0b0f19;
-  line-height: 1.4; /* Reduce line height for tighter spacing */
-  margin-bottom: 1.5rem; /* Decrease margin to make it closer to the buttons */
-}
-
-#downloadButtons {
-  display: flex;
-  gap: 2rem; /* Increase the gap between the buttons to make them more balanced */
-  justify-content: center; /* Center-align the buttons under the paragraph text */
-  align-items: center; /* Ensure both buttons are vertically aligned */
-  margin-top: 2rem; /* Space between the paragraphs and the download buttons */
-  margin-bottom: 2rem; /* Space below the buttons */
-}
-
-#discoverSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 16px;
-  color: #0b0f19;
-  margin-top: 3rem; /* Adjust to move the entire section further down */
-}
-
-.discover-more-btn {
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: box-shadow 0.3s ease, transform 0.3s ease,
-    background-color 0.3s ease;
-}
-
-.discover-more-btn:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
-  background-color: #f0f0f0;
-}
-
-.discover-more-btn:active {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
-  background-color: #e8e8e8;
-}
-
-#twoPhoneImages {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  right: 400px;
-}
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #e0e0e0;
-  position: absolute;
-  bottom: 0;
+  width: 30%;
+  padding-right: 0;
 }
 
 #signInUp {
   background-color: #6366f1;
   color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 9px 20px 9px 20px;
+  border-radius: 4px;
 }
-
-#signInUp:hover {
-  background-color: #4f46e5;
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-}
-
 #signInUp i {
   color: white;
-  font-size: 20px;
+}
+
+#firstPageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primaryBackground);
+}
+
+#firstPage {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+}
+
+#firstPageContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+#downloadSection {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#downloadSection #headers {
+  font-size: 60px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.538);
+  padding: 3%;
+}
+
+#downloadSection h1 {
+  color: var(--text);
+}
+
+#downloadSection #downloadButtons {
+  display: flex;
+  padding: 5%;
+  /* padding-left: 0; */
+  gap: 5%;
+  /* justify-content: ; */
+}
+
+#downloadSection #paragraphs {
+  font-size: 18px;
+  padding: 3%;
+  /* padding-left: 0; */
+}
+
+#downloadSection #discoverSection {
+  display: flex;
+  align-items: center;
+  padding: 3%;
+}
+
+#twoPhoneImages img {
+  height: 100%;
 }

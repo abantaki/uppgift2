@@ -1,5 +1,13 @@
+#infoBox {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+  background: var(--primaryBackground);
+}
+
 .infobox {
-  background-color: #f3f0ff;
+  background-color: var(--background);
   padding: 60px;
   text-align: center;
   border-radius: 10px;
@@ -25,7 +33,7 @@
 
 h4 {
   font-size: 24px;
-  color: black;
+  color: var(--text);
   margin: 0;
   text-align: left;
 }
@@ -68,7 +76,7 @@ h4 {
   border: none;
   flex-grow: 1;
   outline: none;
-  font-size: 14px; 
+  font-size: 14px;
   color: #999;
 }
 

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
+:root {
+  --primaryBackground: #f3f6ff;
+  --secondaryBackground: #ffffff;
+  --text: black;
+}
 * {
   margin: 0;
   padding: 0;

@@ -1,5 +1,5 @@
 // src/components/sixthPage.jsx
-import React from "react";
+import React, { useState } from "react";
 import "./sixthPage.css"; // Importera CSS för sixth page
 
 // Importera alla bilder relativt till projektets filstruktur
@@ -9,7 +9,31 @@ import downArrow from "../../assets/images/sixthPage/downArrow.svg";
 import upArrow from "../../assets/images/sixthPage/upArrow.svg";
 
 const SixthPage = () => {
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const toggleFaq = (index) => {
+    if (openFaqIndex === index) {
+      setOpenFaqIndex(null);
+    } else {
+      setOpenFaqIndex(index);
+    }
+  };
+
+  const faqs = [
+    "Is any of my personal information stored in the App?",
+    "What formats can I download my transaction history in?",
+    "Can I schedule future transfers?",
+    "When can I use Banking App services?",
+    "Can I create my own password that is easy for me to remember?",
+    "What happens if I forget or lose my password?",
+  ];
+
+  const faqDetails = [
+    "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+  ];
+
   return (
+    <section id="sixthPageWrapper" className="sixth-page">
     <section id="sixthPage">
       <div className="sections">
         <div className="contact">
@@ -42,45 +66,25 @@ const SixthPage = () => {
           </div>
         </div>
         <div className="faqs">
-          <div className="faq">
-            <h4>Is any of my personal information stored in the App?</h4>
-            <img src={downArrow} alt="downArrow" />
-          </div>
-          <div className="faq">
-            <h4>What formats can I download my transaction history in?</h4>
-            <img src={downArrow} alt="downArrow" />
-          </div>
-          <div className="faq open">
-            <div className="title">
-              <h4>Can I schedule future transfers?</h4>
-              <img src={upArrow} alt="upArrow" />
+          {faqs.map((faq, index) => (
+            <div
+              className={`faq ${openFaqIndex === index ? "open" : ""}`}
+              key={index}
+              onClick={() => toggleFaq(index)}
+            >
+              <div className="title">
+                <h4>{faq}</h4>
+                <img
+                  src={openFaqIndex === index ? upArrow : downArrow}
+                  alt="toggleArrow"
+                />
+              </div>
+              {openFaqIndex === index && <p>{faqDetails[0]}</p>}
             </div>
-            <p>
-              Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
-              Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus
-              adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-              fermentum duis accumsan lectus non. Massa cursus molestie lorem
-              scelerisque pellentesque. Nisi, enim, arcu purus gravida
-              adipiscing euismod montes, duis egestas. Vehicula eu etiam quam
-              tristique tincidunt suspendisse ut consequat.
-            </p>
-          </div>
-          <div className="faq">
-            <h4>When can I use Banking App services?</h4>
-            <img src={downArrow} alt="downArrow" />
-          </div>
-          <div className="faq">
-            <h4>
-              Can I create my own password that is easy for me to remember?
-            </h4>
-            <img src={downArrow} alt="downArrow" />
-          </div>
-          <div className="faq">
-            <h4>What happens if I forget or lose my password?</h4>
-            <img src={downArrow} alt="downArrow" />
-          </div>
+          ))}
         </div>
       </div>
+    </section>
     </section>
   );
 };

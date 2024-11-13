@@ -1,3 +1,10 @@
+#secondPageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--secondaryBackground);
+}
 #secondPage {
   width: 70%;
 }
@@ -14,7 +21,7 @@
   display: flex;
   justify-content: space-between;
 }
-#leftSecondPageContent img{
+#leftSecondPageContent img {
   height: 80%;
 }
 
@@ -24,7 +31,7 @@
 
 #rightSecondPageContent h2 {
   font-size: 45pt;
-  color: black;
+  color: var(--text);
 }
 
 #rightPageCategories {
