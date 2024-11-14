@@ -1,56 +1,66 @@
-import React from "react";
-import "./fifthPage.css"; // Importera CSS för fifth page
-
-// Importera alla bilder relativt till projektets filstruktur
+import React, { useEffect, useState } from "react";
+import "./fifthPage.css"; // Import the CSS for the fifth page
 import quotes from "../../assets/images/fifthPage/quotes.svg";
-import rating from "../../assets/images/fifthPage/rating.svg";
-import imageFannie from "../../assets/images/fifthPage/image.svg";
-import imageAlbert from "../../assets/images/fifthPage/image (1).svg";
 
 const FifthPage = () => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    // Fetch testimonials from the API
+    fetch("https://win24-assignment.azurewebsites.net/api/testimonials")
+      .then((response) => response.json())
+      .then((data) => setTestimonials(data))
+      .catch((error) => console.error("Error fetching testimonials:", error));
+  }, []);
+
   return (
     <section id="fifthPageWrapper">
       <section id="fifthPage">
         <div className="fifthPageSection">
-          <h1 className="black">Clients are Loving Our App</h1>
+          <h1>Clients are Loving Our App</h1>
         </div>
-
-        <div className="fifthPageSection review">
-          <img className="quote" src={quotes} alt="Quote Icon" />
-          <img src={rating} alt="Rating" />
-          <p>
-            Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
-            Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel.
-            Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.
-          </p>
-          <div className="profile">
-            <img src={imageFannie} alt="Fannie" />
-            <div className="info">
-              <h3 className="black">Fannie Summers</h3>
-              <p>Designer</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="fifthPageSection review">
-          <img className="quote" src={quotes} alt="Quote Icon" />
-          <img src={rating} alt="Rating" />
-          <p>
-            Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin
-            amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare
-            dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.
-          </p>
-          <div className="profile">
-            <img src={imageAlbert} alt="Albert" />
-            <div className="info">
-              <h3 className="black">Albert Flores</h3>
-              <p>Developer</p>
-            </div>
-          </div>
-        </div>
+        {testimonials.length > 0 ? (
+          testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          ))
+        ) : (
+          <p>Loading testimonials...</p>
+        )}
       </section>
     </section>
   );
+};
+
+// Testimonial Card Component
+const TestimonialCard = ({ testimonial }) => {
+  return (
+    <div className="fifthPageSection review">
+      <img className="quote" src={quotes} alt="Quote Icon" />
+      <StarRating rating={testimonial.starRating} />
+      <p>{testimonial.comment}</p>
+      <div className="profile">
+        <img
+          src={testimonial.avatarUrl}
+          alt={testimonial.author}
+          className="profile-img"
+        />
+        <div className="info">
+          <h3>{testimonial.author}</h3>
+          <p>{testimonial.jobRole}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Star Rating Component
+const StarRating = ({ rating }) => {
+  const stars = Array.from({ length: 5 }, (_, index) => (
+    <span key={index} className={index < rating ? "filled-star" : "empty-star"}>
+      ★
+    </span>
+  ));
+  return <div className="star-rating">{stars}</div>;
 };
 
 export default FifthPage;

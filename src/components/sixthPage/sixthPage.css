@@ -72,6 +72,10 @@
   width: 80%;
 }
 
+.contactTitle h2 {
+  color: var(--text);
+}
+
 .faq h4 {
   color: var(--text);
 }

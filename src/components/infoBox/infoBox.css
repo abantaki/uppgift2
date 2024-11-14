@@ -98,3 +98,11 @@ h4 {
 footer {
   padding: 3%;
 }
+
+.sent-message {
+  color: blue;
+  font-size: 1.2em; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+  text-align: center; 
+}
