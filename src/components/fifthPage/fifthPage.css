@@ -3,6 +3,7 @@
   justify-content: center;
   background: var(--primaryBackground);
   padding: 5%;
+  color: var(--text);
 }
 
 #fifthPage {
@@ -40,7 +41,7 @@
 .fifthPageSection.review > p {
   padding: 5% 0;
   font-size: 0.9rem;
-  color: var(--text);
+  color: black;
 }
 
 .quote {
@@ -71,7 +72,7 @@
 
 .info p {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--text);
   margin: 0;
 }
 

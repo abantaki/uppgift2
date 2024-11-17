@@ -21,6 +21,7 @@
 
 #transactionHistory h4 {
   font-size: x-large;
+  
 }
 
 #thirdPageWrapper #thirdPage {
@@ -36,10 +37,10 @@
   display: flex;
   justify-content: space-around;
   align-content: start;
-  /* align-items: center; */
+  align-items: center;
   margin: 2%;
 }
 
 #thirdPage .bilder img {
-  /* height: 80%; */
+  height: 80%;
 }

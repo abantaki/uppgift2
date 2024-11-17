@@ -6,7 +6,7 @@ const FifthPage = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    // Fetch testimonials from the API
+    
     fetch("https://win24-assignment.azurewebsites.net/api/testimonials")
       .then((response) => response.json())
       .then((data) => setTestimonials(data))
